@@ -1,5 +1,5 @@
-resource "aws_sqs_queue" "terraform_queue" {
-  name                      = "ce7-azmi1-tf"
+resource "aws_sqs_queue" "ce7-azmi1-sqs-tf" {
+  name                      = "ce7-azmi1-sqs-tf"
   delay_seconds             = 90
   max_message_size          = 2048
   message_retention_seconds = 86400
@@ -11,6 +11,6 @@ resource "aws_sqs_queue" "terraform_queue" {
 
 
   tags = {
-    Name = "ce7-azmi1-tf"
+    Name = "ce7-azmi1-sqs-tf"
   }
 }
